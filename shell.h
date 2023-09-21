@@ -33,7 +33,7 @@ char *getEnvironmentVariable(char *variableName);
 char *getPath(char *command);
 
 int is_builtin(char *parsed_command);
-void handle_builtin (char **command, char **argv, int status, int index);
+void handle_builtin(char **command, char **argv, int *status, int idx);
 void exit_shell(char **parsed_command, int *exit_status);
 void print_env(char **parsed_command, int *exit_status);
 
