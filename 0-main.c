@@ -26,9 +26,9 @@ int main(int ac, char **argv)
 		if (!parsed_command)
 			continue;
 
-		if(is_builtin(parsed_command[0])){
+		if(is_builtin(parsed_command[0]))
 			handle_builtin(parsed_command, argv, &exit_status, index);
-		}
+		else
 		exit_status = execute_command(parsed_command, argv, index);
 	}
 }
