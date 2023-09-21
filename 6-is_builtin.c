@@ -2,13 +2,13 @@
 
 int is_builtin(char *command)
 {
-    char *builtins[] = {"exit", "env"};
-    int i;
+	char *builtins[] = {"exit", "env"};
+	int i;
 
-    for (i = 0; builtins[i]; i++)
-    {
-        if (_strcmp(command, builtins[i]) == 0)
-            return (1);
-    }
-    return (0);
+	for (i = 0; builtins[i]; i++)
+	{
+		if (_strcmp(command, builtins[i]) == 0)
+			return (1);
+	}
+	return (0);
 }
